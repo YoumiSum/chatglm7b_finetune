@@ -1,3 +1,7 @@
+"""
+请使用ptuning文件夹下的train_chat.sh或者train.bat
+"""
+
 #!/usr/bin/env python
 # coding=utf-8
 # Copyright 2021 The HuggingFace Team. All rights reserved.

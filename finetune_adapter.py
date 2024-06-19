@@ -1,7 +1,3 @@
-"""
-请使用ptuning文件夹下的train_chat.sh或者train.bat
-"""
-
 from transformers.integrations import TensorBoardCallback
 from torch.utils.tensorboard import SummaryWriter
 from transformers import TrainingArguments,TrainerCallback
