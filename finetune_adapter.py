@@ -122,7 +122,7 @@ def get_trainable_para_num(model):
     print(f"trainable paras number: {sum(lst)}")
 
 
-def train(base_model="/root/autodl-tmp/models/ChatGLM-6B", data_path="data/wenlv_token", log_dir="/root/tf-logs",
+def train(data_path="data/wenlv_token", log_dir="/root/tf-logs",
          add_layes=[0], 
          output_dir="chatglm-6b-adapter",
          per_device_train_batch_size=10,
@@ -252,8 +252,7 @@ def load_model(base_model="/root/autodl-tmp/models/ChatGLM-6B",
 
 if __name__ == "__main__":
     
-    train(base_model=base_model, data_path="data/wenlv_token", 
-         add_layes=[0], 
+    train(add_layes=[0], 
          output_dir="chatglm-6b-adapter",
          per_device_train_batch_size=4,
          remove_unused_columns=False,
